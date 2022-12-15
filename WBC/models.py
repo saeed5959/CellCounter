@@ -3,13 +3,13 @@ from torch import nn
 import torch.nn.functional as F
 
 
-class model(nn.Module):
+class model_cnn(nn.Module):
     def __init__(self,config:object):
         super().__init__()
         
-        self.kernel_size = config.kernel_size#3
-        self.in_channels = config.n_channels#3
-        self.filtes = config.filters #[16,32,64]
+        self.kernel_size = config.kernel_size
+        self.in_channels = config.n_channels
+        self.filtes = config.filters
         self.linear_dim = config.lenear_dim
         self.n_category = config.n_category
         

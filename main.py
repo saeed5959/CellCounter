@@ -1,7 +1,7 @@
 import argparse
 
 from RBC import rbc_main
-from WBC import segment_main
+from WBC import segment_main,classify_main
 
 
 def rbc_count(img_path):
@@ -17,7 +17,24 @@ def rbc_count(img_path):
 
 def wbc_classify(img_path):
     
-    return
+    output = classify_main(img_path)
+    
+    if output==0:
+        print("this image belongs to neutrophil group")
+    
+    elif output==1:
+        print("this image belongs to basophil group")
+        
+    elif output==2:
+        print("this image belongs to esophil group")
+        
+    elif output==3:
+        print("this image belongs to lamphocyte group")
+        
+    else:
+        print("this image belongs to monocyte group")
+        
+    return 
 
 def wbc_segment(img_path):
     

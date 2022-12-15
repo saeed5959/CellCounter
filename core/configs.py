@@ -16,19 +16,15 @@ class WbcClassifyConfig:
         WBC classify config
     """
 
-    def __init__(self):
-        model_dict: dict = file_data.get("model", {})
-        self.n_heads: int = model_dict.get("n_heads", 2)
-        self.n_layers: int = model_dict.get("n_layers", 6)
-        self.resblock: str = model_dict.get("resblock", "1")
-        self.p_dropout: float = model_dict.get("p_dropout", 0.1)
-        self.n_layers_q: int = model_dict.get("n_layers_q", 3)
-        self.kernel_size: int = model_dict.get("kernel_size", 3)
-        self.gin_channels: int = model_dict.get("gin_channels", 256)
-        self.inter_channels: int = model_dict.get("inter_channels", 192)
-        self.upsample_rates: list = model_dict.get("upsample_rates", [8, 8, 2, 2])
-        self.filter_channels: int = model_dict.get("filter_channels", 768)
-        
+    def __init__(self):        
+        self.kernel_size:int = 3
+        self.in_channels:int = 3
+        self.filtes:list = [16,32,64]
+        self.linear_dim:int = 512
+        self.n_category:int = 5
+        self.epochs:int = 500
+        self.batch_size:int = 8
+        self.lr:int = 1e-10
         
 class WbcSegmentConfig:
     """
