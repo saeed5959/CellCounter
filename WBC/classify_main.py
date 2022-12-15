@@ -43,9 +43,11 @@ def model_train(dataset_file:str ,model_path:str):
     return
 
 
-def model_infer(img_path:str):
+def model_infer(img_path:str,model_path:str):
     
     model = model_cnn(WbcClassifyConfig)
+    model_pretrain = torch.load(model_path, map_location='cpu')
+    model.state_dict = model_pretrain["model"]
     
     img = cv2.imread(img_path) / 255
     img_tensor = torch.Tensor(img)
