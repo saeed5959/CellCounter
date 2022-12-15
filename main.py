@@ -1,6 +1,7 @@
 import argparse
 
 from RBC import rbc_main
+from WBC import segment_main
 
 
 def rbc_count(img_path):
@@ -15,9 +16,16 @@ def rbc_count(img_path):
     return
 
 def wbc_classify(img_path):
+    
     return
 
 def wbc_segment(img_path):
+    
+    wbc_nums, img_out_path = segment_main(img_path)
+    
+    print(f"numbers of WBC = {wbc_nums}")
+    print(f"output image path is : {img_out_path}")
+    
     return
 
 

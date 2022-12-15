@@ -73,7 +73,7 @@ def counter(img_path:str):
     radius = radius[radius!=0]
     rbc_nums,rbc_radius_mean,rbc_volume_mean = rbc_meter(radius)
     
-    img_out_path = os.path.join(os.path.basename(img_path)+"img_out.jpg")
+    img_out_path = os.path.join(os.path.dirname(img_path),"img_out.jpg")
     cv2.imwrite(img_out_path,img_copy)
     
     return rbc_nums, rbc_radius_mean, rbc_volume_mean, img_out_path
