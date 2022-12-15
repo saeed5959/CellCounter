@@ -1,18 +1,32 @@
-# NABZ GROUP
-## CELL COUNTER
+# CELL COUNTER
+## Deep learning for wbc classification   and  image processing for rbc counting
 
-## In this project after using a novel technique for imaging of cells in blood what is a microfluidic channel we can take a picture using a camera and a microscope then by image processing techniques we can count and classify these cells to detect a special desease . 
+### HOW TO USE IT :
 
-1-for finding the python codes of this project for red blood cell : RBC.ipynb 
-
-2-for finding the python codes of this project for white blood cell segmentation : WBC_segmentation.ipynb 
-
-2-for finding the python codes of this project for white blood cell classification : WBC_classification.ipynb 
-
-
-####  ***All of this dataset has been taken by our lab microscope*** 
-
-
+   1-install : 
+                      
+         git clone https://github.com/saeed5959/CellCounter
+         pip install -r requirements.txt
+                      
+   2-RBC :
+   
+         python3 main.py   --mode rbc_count   --img_path ./test_data/RBC/1.jpg
+         
+   2-WBC classify infer :
+   
+         python3 main.py   --mode wbc_classify_infer   --img_path ./test_data/WBC/classify/basophil.jpg  --model_path ./model.pth
+         
+   2-WBC classify train :
+   
+         python3 main.py --mode wbc_classify_train --dataset_file ./dataset_file.txt  --model_path ./model.pth
+         
+   2-WBC segmentation :
+   
+         python3 main.py --mode wbc_segment --img_path ./test_data/WBC/segment/main_image.jpg
+                      
+                      
+                      
+                      
 ### segmentation and classification and counting the cells in blood :
 
    1-red blood cell : 
@@ -31,12 +45,8 @@
                       2- classification of WBC       RESULT : 92% in classification  
                       
                       3- dataset : 401 images that averagely any image has 3 WBC
-   
-   3-platelet  :  1- counting the numbers of PLT   2- finding the radius of PLT 
+  
                              
-   
- 
-
 
 ### blood cells
 
