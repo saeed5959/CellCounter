@@ -50,7 +50,7 @@
 
 ### blood cells
 
-<img src="mrh286-cdp-033018.jpg" width="450" height="200" border="20" title="blood cells">
+<img src="/test_data/RBC/1.jpg" width="450" height="200" border="20" title="blood cells">
                       
 
 
