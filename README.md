@@ -61,31 +61,27 @@ for medicl application , blood cells have a huge information about the diseases 
 
 
 
-### red blood cell
-
-<img src="main_image.jpg" width="450" height="150" border="20">
-
 ### red blood cell after detection
 
-<img src="crop_and_detect_image.jpg" width="450" height="150" border="20">
+<img src="/test_data/RBC/out.jpg" width="450" height="150" border="20">
 
 
 ### esotrophil
 
-<img src="eso-14882501911.jpg" width="450" height="150" border="20">
+<img src="test_data/WBC/classify/esophil.jpg" width="450" height="150" border="20">
  
 ### lamphocyte
  
-<img src="lam-10490525360.jpg" width="450" height="150" border="20">
+<img src="test_data/WBC/classify/lamphocyte.jpg" width="450" height="150" border="20">
  
 ### monocyte
  
-<img src="mono-9264272505.jpg" width="450" height="150" border="20">
+<img src="test_data/WBC/classify/monocyte.jpg" width="450" height="150" border="20">
 
 ### neutrophile
  
-<img src="neu-4021732975.jpg" width="450" height="150" border="20">
+<img src="test_data/WBC/classify/neutrophil.jpg" width="450" height="150" border="20">
 
 ### basophill
  
-<img src="98-1-4-2710.jpg" width="450" height="150" border="20">
+<img src="test_data/WBC/classify/basophil.jpg" width="450" height="150" border="20">
